@@ -9,11 +9,34 @@
 // // }
 // // } --!-- print 1-135 --!--algorithem 2
 
+// console.log('sum of the numbers from 1 to 135:');
+//   let sum = 0;
+//   for (let i = 1; i <= 135; i++) {
+//     sum = sum + i;
+//     console.log("Number: " + i);
+//     console.log("Sum: " + sum);
+//   }
+
+// var x = ['Man', 'I', 'Love', 'The', 'Restart', 'Bootcamp']
+// var y = '';
+// for (var i = 0; i < x.length)
+
+
+var a=0;
+var b=1;
+var result=b;
+for (var i=1;i<10; i++){
+  console.log(result)
+  result=a+b;
+  a=b;
+  b=result;
+}
+
 
 // let sum=0 
 // for (let i = 0; i <= 135; i++) {
-//     // sum+=i
-//     // console.log(('Number is:'),i,('sum'),sum)}
+// sum+=i
+// console.log(('Number is:'),i,('sum'),sum)}
 
 // // const x = [1,4,2,12]
 // // for (let index = 0; index <= x.length-1; index++){
