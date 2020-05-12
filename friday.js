@@ -1,48 +1,19 @@
-
-
-
-
-
-// const arr = [5, 2, 8, 20, -2, 0, 11, 7, 3, 9, 31]
-// let maxNumber = arr[0];
-// let array2 = arr.sort()
-
-// console.log(array2[2])
-
-// for(let i=0; i<arr.length; i++){
-  
-//     if (arr[i] > maxNumber)
-//     {
-//         maxNumber = arr[i];
-        
-//     }
-
-// }
-// console.log(maxNumber);
-
-
-// const arr = [5, 2, 8, 20, -2, 0, 11, 7, 3, 9, 31]
-// let maxNumber = arr[0];
-// for(i=0; i<arr.length; i++){
-//     if (arr[i] > maxNumber)
-//     {
-//         maxNumber = arr[i];
-        
-//     }
-
-// }
-// console.log(maxNumber);
-
-
-// const arr = [ 5, 2, 8, -2, 11, 0, 7, 3]
-// let maxNumber = arr[0];
-// for( i = 0; i <= arr.length; i++) {
-//   if(arr[i] > maxNumber)
-// {
-//       maxNumber = arr[i];
-
-// }
-// }
-
-// console.log(maxNumber);
-
+let array = [5, 2, 8, 20, -2, 0, 11, 7, 3, 9, 31];
+let first = 0;
+let second = 0;
+let third = 0;
+ for (let i = 0; i < array.length; i++) {
+   if (array[i] > first) {
+     third = second;
+     second = first;
+     first = array[i];
+   } else if (array[i] > second){
+     third = second;
+     second = array[i];
+   } else if (array[i] > third){
+     third = array[i];
+   }
+ }
+  console.log('First: ' + first);
+  console.log('Second: ' + second);
+  console.log('Third: ' + third);
